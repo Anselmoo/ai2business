@@ -55,7 +55,10 @@ markdown_extensions:
   - markdown.extensions.footnotes:
   - markdown.extensions.md_in_html:
   - pymdownx.superfences:
-      preserve_tabs: true
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_formatpip
   - pymdownx.highlight:
       extend_pygments_lang:
         - name: php-inline
@@ -82,8 +85,8 @@ markdown_extensions:
   - pymdownx.caret:
   - pymdownx.smartsymbols:
   - pymdownx.emoji:
-     # emoji_index: !!python/name:materialx.emoji.twemoji
-     # emoji_generator: !!python/name:materialx.emoji.to_svg
+     emoji_index: !!python/name:materialx.emoji.twemoji
+     emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.escapeall:
       hardbreak: True
       nbsp: True
@@ -98,6 +101,8 @@ markdown_extensions:
   - pymdownx.details:
   - pymdownx.tabbed:
   - pymdownx.saneheaders:
+  - codehilite
+  - admonition
 
 extra:
   social:
@@ -106,10 +111,8 @@ extra:
   version:
     method: mike
 
-#extra_css:
-#  - assets/pymdownx-extras/extra.css
-#extra_javascript:
-#  - assets/pymdownx-extras/extra-uml.js
+extra_javascript:
+  - https://unpkg.com/mermaid@8.4.4/dist/mermaid.min.js
 
 plugins:
   - search
