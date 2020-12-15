@@ -1,4 +1,4 @@
-[**View in Colab**](https://colab.research.google.com/github/keras-team/autokeras/blob/master/docs/ipynb/trend_search_tutorial.ipynb)   &nbsp; &nbsp;[**GitHub source**](https://github.com/keras-team/autokeras/blob/master/docs/py/trend_search_tutorial.py)
+[**View in Colab**](https://colab.research.google.com/github/ai2business/ai2business/blob/main/docs/ipynb/trend_search_tutorial.ipynb)   &nbsp; &nbsp;[**GitHub source**](https://github.com/ai2business/ai2business/blob/main/docs//tutorialstrend_search_tutorial.py)
 
 ## Building a search trend dataframe
 
@@ -12,7 +12,7 @@ In this context, the `trend-search`-module is a designed in a builder model to a
 
 
 ```python
-!! pip install git+https://github.com/AI2Business/ai2business.git
+!pip install git+https://github.com/AI2Business/ai2business.git
 
 ```
 
