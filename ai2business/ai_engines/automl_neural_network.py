@@ -392,6 +392,7 @@ class AutoMLPipeline:
         Args:
             train (Any): Any type of auto machine learning model or its attribute.
         """
+        self._train = train
 
     def run_automl(self):
         """Perform the job and update the auto machine learning model."""
@@ -573,9 +574,7 @@ class AutoMLFit(Procedure):
             dict: Updated dictionary for key `model`.
         """
         return {
-            "model": automl_model["model"]
-            .__dict__["model"]
-            .fit_model(
+            "model": automl_model["model"].fit_model(
                 x_train=self.x_train,
                 y_train=self.y_train,
                 epochs=self.epochs,
@@ -694,5 +693,5 @@ class AutoMLSave(Procedure):
         Args:
             automl_model (dict): [description]
         """
-        _model = automl_model.export_model()
+        _model = automl_model["model"].export_model()
         _model.save(f"{self.model_name}", save_format="tf")
