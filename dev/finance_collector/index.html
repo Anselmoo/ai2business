@@ -1,0 +1,3931 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Smart solutions for Business with AI.">
+      
+      
+      
+        <link rel="canonical" href="https://ai2business.github.io/ai2business/finance_collector/">
+      
+      
+        <meta name="author" content="AI2Business & coworkers">
+      
+      <link rel="shortcut icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Finance-Collector - AI2Business</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/version-select.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="dracula" data-md-color-primary="indigo" data-md-color-accent="blue">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-of-the-finance-collector" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://ai2business.github.io/ai2business/" title="AI2Business" class="md-header-nav__button md-logo" aria-label="AI2Business">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            AI2Business
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Finance-Collector
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/AI2Business/ai2business/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI2Business
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+    
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../Sample_Generators/" class="md-tabs__link">
+        Documentation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../tutorials/trend_search_tutorial/" class="md-tabs__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+      
+        
+      
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        API
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ai2business.github.io/ai2business/" title="AI2Business" class="md-nav__button md-logo" aria-label="AI2Business">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AI2Business
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/AI2Business/ai2business/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI2Business
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sample_Generators/" class="md-nav__link">
+      Sample Generators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Key_Performance_Collection/" class="md-nav__link">
+      Trend Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../AutoML_for_NeuralNetworks/" class="md-nav__link">
+      AutoMLRun
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Oneliner/" class="md-nav__link">
+      Oneliner
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/trend_search_tutorial/" class="md-nav__link">
+      Trend Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/timeseries_forecast_tutorial/" class="md-nav__link">
+      AutoML
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    <label class="md-nav__link" for="nav-4">
+      API
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="API" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" checked>
+    <label class="md-nav__link" for="nav-4-1">
+      Key Performance Collector
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Key Performance Collector" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        Key Performance Collector
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Finance-Collector
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Finance-Collector
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api-of-the-finance-collector" class="md-nav__link">
+    API of the Finance Collector
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector" class="md-nav__link">
+    ai2business.kpi_collector.finance_collector
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector" class="md-nav__link">
+    BuilderFinanceCollector
+  </a>
+  
+    <nav class="md-nav" aria-label="BuilderFinanceCollector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.return_dataframe" class="md-nav__link">
+    return_dataframe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.return_dict" class="md-nav__link">
+    return_dict
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.all_trickers" class="md-nav__link">
+    all_trickers()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_actions" class="md-nav__link">
+    get_actions()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_balancesheet" class="md-nav__link">
+    get_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_calendar" class="md-nav__link">
+    get_calendar()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_cashflow" class="md-nav__link">
+    get_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_chart_history" class="md-nav__link">
+    get_chart_history()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_dividends" class="md-nav__link">
+    get_dividends()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_earnings" class="md-nav__link">
+    get_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_financials" class="md-nav__link">
+    get_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_info" class="md-nav__link">
+    get_info()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_institutional_holders" class="md-nav__link">
+    get_institutional_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_isin_code" class="md-nav__link">
+    get_isin_code()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_major_holders" class="md-nav__link">
+    get_major_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_mutualfund_holders" class="md-nav__link">
+    get_mutualfund_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_options" class="md-nav__link">
+    get_options()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_balancesheet" class="md-nav__link">
+    get_quarterly_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_cashflow" class="md-nav__link">
+    get_quarterly_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_earnings" class="md-nav__link">
+    get_quarterly_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_financials" class="md-nav__link">
+    get_quarterly_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_recommendations" class="md-nav__link">
+    get_recommendations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_splits" class="md-nav__link">
+    get_splits()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_sustainability" class="md-nav__link">
+    get_sustainability()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector" class="md-nav__link">
+    DesignerFinanceCollector
+  </a>
+  
+    <nav class="md-nav" aria-label="DesignerFinanceCollector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.return_dataframe" class="md-nav__link">
+    return_dataframe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.return_dict" class="md-nav__link">
+    return_dict
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note:
+  </a>
+  
+    <nav class="md-nav" aria-label="Note:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.all_trickers" class="md-nav__link">
+    all_trickers()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_actions" class="md-nav__link">
+    get_actions()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_balancesheet" class="md-nav__link">
+    get_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_calendar" class="md-nav__link">
+    get_calendar()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_cashflow" class="md-nav__link">
+    get_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_chart_history" class="md-nav__link">
+    get_chart_history()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_dividends" class="md-nav__link">
+    get_dividends()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_earnings" class="md-nav__link">
+    get_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_financials" class="md-nav__link">
+    get_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_info" class="md-nav__link">
+    get_info()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_institutional_holders" class="md-nav__link">
+    get_institutional_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_isin_code" class="md-nav__link">
+    get_isin_code()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_major_holders" class="md-nav__link">
+    get_major_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_mutualfund_holders" class="md-nav__link">
+    get_mutualfund_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_options" class="md-nav__link">
+    get_options()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_balancesheet" class="md-nav__link">
+    get_quarterly_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_cashflow" class="md-nav__link">
+    get_quarterly_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_earnings" class="md-nav__link">
+    get_quarterly_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_financials" class="md-nav__link">
+    get_quarterly_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_recommendations" class="md-nav__link">
+    get_recommendations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_splits" class="md-nav__link">
+    get_splits()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_sustainability" class="md-nav__link">
+    get_sustainability()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector" class="md-nav__link">
+    FinanceCollector
+  </a>
+  
+    <nav class="md-nav" aria-label="FinanceCollector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.builder" class="md-nav__link">
+    builder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_actions" class="md-nav__link">
+    find_actions()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_balancesheet" class="md-nav__link">
+    find_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_calendar" class="md-nav__link">
+    find_calendar()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_cashflow" class="md-nav__link">
+    find_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_chart_histogram" class="md-nav__link">
+    find_chart_histogram()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_dividends" class="md-nav__link">
+    find_dividends()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_earnings" class="md-nav__link">
+    find_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_financials" class="md-nav__link">
+    find_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_info" class="md-nav__link">
+    find_info()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_institutional_holders" class="md-nav__link">
+    find_institutional_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_isin_code" class="md-nav__link">
+    find_isin_code()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_major_holders" class="md-nav__link">
+    find_major_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_mutualfund_holders" class="md-nav__link">
+    find_mutualfund_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_options" class="md-nav__link">
+    find_options()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_balancesheet" class="md-nav__link">
+    find_quarterly_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_cashflow" class="md-nav__link">
+    find_quarterly_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_earnings" class="md-nav__link">
+    find_quarterly_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_financials" class="md-nav__link">
+    find_quarterly_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_recommendations" class="md-nav__link">
+    find_recommendations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_splits" class="md-nav__link">
+    find_splits()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_sustainability" class="md-nav__link">
+    find_sustainability()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../trends_collector/" class="md-nav__link">
+      Trends-Collector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../datasets/" class="md-nav__link">
+      Datasets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../automl/" class="md-nav__link">
+      AutoML
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api-of-the-finance-collector" class="md-nav__link">
+    API of the Finance Collector
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector" class="md-nav__link">
+    ai2business.kpi_collector.finance_collector
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector" class="md-nav__link">
+    BuilderFinanceCollector
+  </a>
+  
+    <nav class="md-nav" aria-label="BuilderFinanceCollector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.return_dataframe" class="md-nav__link">
+    return_dataframe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.return_dict" class="md-nav__link">
+    return_dict
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.all_trickers" class="md-nav__link">
+    all_trickers()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_actions" class="md-nav__link">
+    get_actions()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_balancesheet" class="md-nav__link">
+    get_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_calendar" class="md-nav__link">
+    get_calendar()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_cashflow" class="md-nav__link">
+    get_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_chart_history" class="md-nav__link">
+    get_chart_history()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_dividends" class="md-nav__link">
+    get_dividends()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_earnings" class="md-nav__link">
+    get_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_financials" class="md-nav__link">
+    get_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_info" class="md-nav__link">
+    get_info()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_institutional_holders" class="md-nav__link">
+    get_institutional_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_isin_code" class="md-nav__link">
+    get_isin_code()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_major_holders" class="md-nav__link">
+    get_major_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_mutualfund_holders" class="md-nav__link">
+    get_mutualfund_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_options" class="md-nav__link">
+    get_options()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_balancesheet" class="md-nav__link">
+    get_quarterly_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_cashflow" class="md-nav__link">
+    get_quarterly_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_earnings" class="md-nav__link">
+    get_quarterly_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_financials" class="md-nav__link">
+    get_quarterly_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_recommendations" class="md-nav__link">
+    get_recommendations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_splits" class="md-nav__link">
+    get_splits()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_sustainability" class="md-nav__link">
+    get_sustainability()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector" class="md-nav__link">
+    DesignerFinanceCollector
+  </a>
+  
+    <nav class="md-nav" aria-label="DesignerFinanceCollector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.return_dataframe" class="md-nav__link">
+    return_dataframe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.return_dict" class="md-nav__link">
+    return_dict
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note:
+  </a>
+  
+    <nav class="md-nav" aria-label="Note:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.all_trickers" class="md-nav__link">
+    all_trickers()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_actions" class="md-nav__link">
+    get_actions()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_balancesheet" class="md-nav__link">
+    get_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_calendar" class="md-nav__link">
+    get_calendar()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_cashflow" class="md-nav__link">
+    get_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_chart_history" class="md-nav__link">
+    get_chart_history()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_dividends" class="md-nav__link">
+    get_dividends()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_earnings" class="md-nav__link">
+    get_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_financials" class="md-nav__link">
+    get_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_info" class="md-nav__link">
+    get_info()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_institutional_holders" class="md-nav__link">
+    get_institutional_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_isin_code" class="md-nav__link">
+    get_isin_code()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_major_holders" class="md-nav__link">
+    get_major_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_mutualfund_holders" class="md-nav__link">
+    get_mutualfund_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_options" class="md-nav__link">
+    get_options()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_balancesheet" class="md-nav__link">
+    get_quarterly_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_cashflow" class="md-nav__link">
+    get_quarterly_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_earnings" class="md-nav__link">
+    get_quarterly_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_financials" class="md-nav__link">
+    get_quarterly_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_recommendations" class="md-nav__link">
+    get_recommendations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_splits" class="md-nav__link">
+    get_splits()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_sustainability" class="md-nav__link">
+    get_sustainability()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector" class="md-nav__link">
+    FinanceCollector
+  </a>
+  
+    <nav class="md-nav" aria-label="FinanceCollector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.builder" class="md-nav__link">
+    builder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_actions" class="md-nav__link">
+    find_actions()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_balancesheet" class="md-nav__link">
+    find_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_calendar" class="md-nav__link">
+    find_calendar()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_cashflow" class="md-nav__link">
+    find_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_chart_histogram" class="md-nav__link">
+    find_chart_histogram()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_dividends" class="md-nav__link">
+    find_dividends()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_earnings" class="md-nav__link">
+    find_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_financials" class="md-nav__link">
+    find_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_info" class="md-nav__link">
+    find_info()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_institutional_holders" class="md-nav__link">
+    find_institutional_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_isin_code" class="md-nav__link">
+    find_isin_code()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_major_holders" class="md-nav__link">
+    find_major_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_mutualfund_holders" class="md-nav__link">
+    find_mutualfund_holders()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_options" class="md-nav__link">
+    find_options()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_balancesheet" class="md-nav__link">
+    find_quarterly_balancesheet()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_cashflow" class="md-nav__link">
+    find_quarterly_cashflow()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_earnings" class="md-nav__link">
+    find_quarterly_earnings()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_financials" class="md-nav__link">
+    find_quarterly_financials()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_recommendations" class="md-nav__link">
+    find_recommendations()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_splits" class="md-nav__link">
+    find_splits()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai2business.kpi_collector.finance_collector.FinanceCollector.find_sustainability" class="md-nav__link">
+    find_sustainability()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/AI2Business/ai2business/edit/main/docs/sources/finance_collector.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Finance-Collector</h1>
+                
+                <h2 id="api-of-the-finance-collector">API of the Finance Collector</h2>
+<hr />
+<div class="doc doc-object doc-module">
+<h2 class="hidden-toc" href="#ai2business.kpi_collector.finance_collector" id="ai2business.kpi_collector.finance_collector" style="visibility: hidden; position: absolute;">
+        </h2>
+<div class="doc doc-contents first">
+<p>Finance Collection Module: Collecting Financial and Ticker Trends via http-API</p>
+<div class="doc doc-children">
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector">
+
+        <code>BuilderFinanceCollector</code>
+
+
+      </h2>
+<div class="doc doc-contents ">
+<p>BuilderTrendsCollector contains the abstract properties and methods.</p>
+<p><code>BuilderTrendsCollector</code> specifies the properties and methods for creating the
+different parts of the <code>DesignerFinanceCollector</code> objects.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ABC</code></td>
+<td><code>class</code></td>
+<td>
+<p>Helper class that provides a standard way to create an ABC using inheritance.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.return_dataframe">
+
+        <code class="highlight">
+return_dataframe: <span class="kc">None</span>        </code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract property of return_dataframe.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.return_dict">
+
+        <code class="highlight">
+return_dict: <span class="kc">None</span>        </code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract property of return_dict.</p>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.all_trickers">
+
+        <code class="highlight language-python">
+all_trickers<span class="p">()</span>        </code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract staticmethod of all_tickers.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractstaticmethod</span>
+<span class="k">def</span> <span class="nf">all_trickers</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract staticmethod of all_tickers."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_actions">
+
+        <code class="highlight language-python">
+get_actions<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract property of get_actions.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_actions</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract property of get_actions."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_balancesheet">
+
+        <code class="highlight language-python">
+get_balancesheet<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_balancesheet.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_balancesheet</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_balancesheet."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_calendar">
+
+        <code class="highlight language-python">
+get_calendar<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_calendar.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_calendar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_calendar."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_cashflow">
+
+        <code class="highlight language-python">
+get_cashflow<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_cashflow.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_cashflow</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_cashflow."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_chart_history">
+
+        <code class="highlight language-python">
+get_chart_history<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_chart_history.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_chart_history</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_chart_history."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_dividends">
+
+        <code class="highlight language-python">
+get_dividends<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_dividends.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_dividends</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_dividends."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_earnings">
+
+        <code class="highlight language-python">
+get_earnings<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_earnings.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_earnings</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_earnings."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_financials">
+
+        <code class="highlight language-python">
+get_financials<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_financials.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_financials</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_financials."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_info">
+
+        <code class="highlight language-python">
+get_info<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_info.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_info</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_info."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_institutional_holders">
+
+        <code class="highlight language-python">
+get_institutional_holders<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_institutional_holders.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_institutional_holders</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_institutional_holders."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_isin_code">
+
+        <code class="highlight language-python">
+get_isin_code<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_isin_code.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_isin_code</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_isin_code."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_major_holders">
+
+        <code class="highlight language-python">
+get_major_holders<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_major_holders.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_major_holders</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_major_holders."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_mutualfund_holders">
+
+        <code class="highlight language-python">
+get_mutualfund_holders<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_mutualfund_holders.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_mutualfund_holders</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_mutualfund_holders."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_options">
+
+        <code class="highlight language-python">
+get_options<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_options.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_options</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_options."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_balancesheet">
+
+        <code class="highlight language-python">
+get_quarterly_balancesheet<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_quarterly_balancesheet.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_quarterly_balancesheet</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_quarterly_balancesheet."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_cashflow">
+
+        <code class="highlight language-python">
+get_quarterly_cashflow<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_quarterly_cashflow.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_quarterly_cashflow</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_quarterly_cashflow."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_earnings">
+
+        <code class="highlight language-python">
+get_quarterly_earnings<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_quarterly_earnings.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_quarterly_earnings</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_quarterly_earnings."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_quarterly_financials">
+
+        <code class="highlight language-python">
+get_quarterly_financials<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_quarterly_financials.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_quarterly_financials</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_quarterly_financials."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_recommendations">
+
+        <code class="highlight language-python">
+get_recommendations<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_recommendations.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_recommendations</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_recommendations."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_splits">
+
+        <code class="highlight language-python">
+get_splits<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_splits.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_splits</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_splits."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.BuilderFinanceCollector.get_sustainability">
+
+        <code class="highlight language-python">
+get_sustainability<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Abstract method of get_sustainability.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">get_sustainability</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Abstract method of get_sustainability."""</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector">
+
+        <code>DesignerFinanceCollector</code>
+
+
+      </h2>
+<div class="doc doc-contents ">
+<p>DesignerTrendsCollector contains the specific implementation of
+<code>BuilderFinanceCollector</code>.</p>
+<p><code>DesignerTrendsCollector</code> contains the specific implementation of
+<code>BuilderFinanceCollector</code> based on the external library <code>yfinance</code>.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BuilderFinanceCollector</code></td>
+<td><code>class</code></td>
+<td>
+<p>Abstract class that provides the implementations of the properties and methods.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.return_dataframe">
+
+        <code class="highlight">
+return_dataframe: <span class="n">DataFrame</span>        </code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Return the ticker results as dataframe.</p>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DataFrame</code></td>
+<td>
+<p>pd.DataFrame: Two-dimensional, size-mutable, homogenous tabular data, which contains the ticker results as time-series.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.return_dict">
+
+        <code class="highlight">
+return_dict: <span class="nb">dict</span>        </code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Return the search results as dictionary.</p>
+<h2 id="note">Note:</h2>
+<p><code>return_dict</code> is especially useful for getting analysis reports of tickers, market changes, or institutional forecasts.</p>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dict</code></td>
+<td>
+<p>dict: Multi-dimensional, size-mutable, mainly heterogeneous data as dictionary, which contains the <code>clustered</code> or <code>nested</code> ticker results.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.__init__">
+
+        <code class="highlight language-python">
+__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keyword_list</span><span class="p">)</span>        </code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Initialization of DesignerFinanceCollector</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>keyword_list</code></td>
+<td><code>list</code></td>
+<td>
+<p>Keyword-list with the tickers to search for.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keyword_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Initialization of DesignerFinanceCollector</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        keyword_list (list): Keyword-list with the tickers to search for.</span>
+<span class="sd">    """</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span> <span class="o">=</span> <span class="n">keyword_list</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tickers</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">Tickers</span><span class="p">(</span><span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="p">{}</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.all_trickers">
+
+        <code class="highlight language-python">
+all_trickers<span class="p">(</span><span class="n">tickers</span><span class="p">,</span> <span class="n">keyword_list</span><span class="p">,</span> <span class="n">func</span><span class="p">)</span>        </code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+      </h3>
+<div class="doc doc-contents ">
+<p>all_trickers [summary]</p>
+<p>[extended_summary]</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tickers</code></td>
+<td><code>Tickers</code></td>
+<td>
+<p>Finance market data downloader.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>keyword_list</code></td>
+<td><code>list</code></td>
+<td>
+<p>Keyword-list with the tickers to search for.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>func</code></td>
+<td><code>str</code></td>
+<td>
+<p>Specific class as string.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DataFrame</code></td>
+<td>
+<p>pd.DataFrame: Two-dimensional, size-mutable, heterogenous (table in a table) tabular data, which contains the ticker results of different companies.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="nd">@staticmethod</span>
+<span class="k">def</span> <span class="nf">all_trickers</span><span class="p">(</span>
+    <span class="n">tickers</span><span class="p">:</span> <span class="n">yf</span><span class="o">.</span><span class="n">Tickers</span><span class="p">,</span> <span class="n">keyword_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">func</span><span class="p">:</span> <span class="nb">str</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+    <span class="sd">"""all_trickers [summary]</span>
+
+<span class="sd">    [extended_summary]</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        tickers (yf.Tickers): Finance market data downloader.</span>
+<span class="sd">        keyword_list (list): Keyword-list with the tickers to search for.</span>
+<span class="sd">        func (str): Specific class as string.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        pd.DataFrame: Two-dimensional, size-mutable, heterogenous (table in a table) tabular data, which contains the ticker results of different companies.</span>
+<span class="sd">    """</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="n">keyword</span><span class="p">:</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">tickers</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span> <span class="n">keyword</span><span class="p">),</span> <span class="n">func</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">keyword</span> <span class="ow">in</span> <span class="n">keyword_list</span>
+    <span class="p">}</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_actions">
+
+        <code class="highlight language-python">
+get_actions<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the dividends and splits of the ticker together.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_actions</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the dividends and splits of the ticker together."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span> <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="s2">"actions"</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_balancesheet">
+
+        <code class="highlight language-python">
+get_balancesheet<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the yearly balancesheet of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_balancesheet</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the yearly balancesheet of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"balancesheet"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_calendar">
+
+        <code class="highlight language-python">
+get_calendar<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for information about upcoming events of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_calendar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for information about upcoming events of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span> <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="s2">"calendar"</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_cashflow">
+
+        <code class="highlight language-python">
+get_cashflow<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the yearly cashflow of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_cashflow</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the yearly cashflow of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"cashflow"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_chart_history">
+
+        <code class="highlight language-python">
+get_chart_history<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">interval</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">prepost</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">auto_adjust</span><span class="p">,</span> <span class="n">proxy</span><span class="p">,</span> <span class="n">threads</span><span class="p">,</span> <span class="n">group_by</span><span class="p">,</span> <span class="n">progress</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request the history of the chart for given tickers.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>period</code></td>
+<td><code>str</code></td>
+<td>
+<p>Period of the chart history; valid options: <code>1d</code>, <code>5d</code>, <code>1mo</code>, <code>3mo</code>, <code>6mo</code>, <code>1y</code>, <code>2y</code>, <code>5y</code>, <code>10y</code>, or <code>ytd,max</code>. It can either be used the <code>period</code>-parameter or the combination of <code>start</code>- and <code>end</code>-parameter.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>interval</code></td>
+<td><code>str</code></td>
+<td>
+<p>Interval, respectively, time step in the period; valid options: <code>1m</code>, <code>2m</code>, <code>5m</code>, <code>15m</code>, <code>30m</code>, <code>60m</code>, <code>90m</code>, <code>1h</code>, <code>1d</code>, <code>5d</code>, <code>1wk</code>, <code>1mo</code>, or <code>3mo</code>. The intraday data cannot extend last 60 days.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>start</code></td>
+<td><code>str</code></td>
+<td>
+<p>Download start date string (YYYY-MM-DD) or _datetime.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>end</code></td>
+<td><code>str</code></td>
+<td>
+<p>Download end date string (YYYY-MM-DD) or _datetime.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>prepost</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Group by 'ticker' or 'column'.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>actions</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Including Pre and Post market data in results.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>auto_adjust</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Adjusting all OHLC automatically.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>proxy</code></td>
+<td><code>str</code></td>
+<td>
+<p>Downloading the dividend plus stock splits data.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>threads</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Specifying the number of download threads.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>group_by</code></td>
+<td><code>str</code></td>
+<td>
+<p>Grouping by ticker or column.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>progress</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Showing progress bar.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_chart_history</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">period</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">interval</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">start</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">end</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">prepost</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+    <span class="n">actions</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+    <span class="n">auto_adjust</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+    <span class="n">proxy</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">threads</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+    <span class="n">group_by</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">progress</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+    <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request the history of the chart for given tickers.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        period (str): Period of the chart history; valid options: `1d`, `5d`, `1mo`, `3mo`, `6mo`, `1y`, `2y`, `5y`, `10y`, or `ytd,max`. It can either be used the `period`-parameter or the combination of `start`- and `end`-parameter.</span>
+<span class="sd">        interval (str): Interval, respectively, time step in the period; valid options: `1m`, `2m`, `5m`, `15m`, `30m`, `60m`, `90m`, `1h`, `1d`, `5d`, `1wk`, `1mo`, or `3mo`. The intraday data cannot extend last 60 days.</span>
+<span class="sd">        start (str): Download start date string (YYYY-MM-DD) or _datetime.</span>
+<span class="sd">        end (str): Download end date string (YYYY-MM-DD) or _datetime.</span>
+<span class="sd">        prepost (bool): Group by 'ticker' or 'column'.</span>
+<span class="sd">        actions (bool): Including Pre and Post market data in results.</span>
+<span class="sd">        auto_adjust (bool): Adjusting all OHLC automatically.</span>
+<span class="sd">        proxy (str): Downloading the dividend plus stock splits data.</span>
+<span class="sd">        threads (bool): Specifying the number of download threads.</span>
+<span class="sd">        group_by (str): Grouping by ticker or column.</span>
+<span class="sd">        progress (bool): Showing progress bar.</span>
+<span class="sd">    """</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">df</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="o">.</span><span class="n">history</span><span class="p">(</span>
+        <span class="n">period</span><span class="o">=</span><span class="n">period</span><span class="p">,</span>
+        <span class="n">interval</span><span class="o">=</span><span class="n">interval</span><span class="p">,</span>
+        <span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span>
+        <span class="n">end</span><span class="o">=</span><span class="n">end</span><span class="p">,</span>
+        <span class="n">prepost</span><span class="o">=</span><span class="n">prepost</span><span class="p">,</span>
+        <span class="n">actions</span><span class="o">=</span><span class="n">actions</span><span class="p">,</span>
+        <span class="n">auto_adjust</span><span class="o">=</span><span class="n">auto_adjust</span><span class="p">,</span>
+        <span class="n">proxy</span><span class="o">=</span><span class="n">proxy</span><span class="p">,</span>
+        <span class="n">threads</span><span class="o">=</span><span class="n">threads</span><span class="p">,</span>
+        <span class="n">group_by</span><span class="o">=</span><span class="n">group_by</span><span class="p">,</span>
+        <span class="n">progress</span><span class="o">=</span><span class="n">progress</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_dividends">
+
+        <code class="highlight language-python">
+get_dividends<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the dividend of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_dividends</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the dividend of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span> <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="s2">"dividends"</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_earnings">
+
+        <code class="highlight language-python">
+get_earnings<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the yearly earnings of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_earnings</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the yearly earnings of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"earnings"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_financials">
+
+        <code class="highlight language-python">
+get_financials<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the yearly financial information of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_financials</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the yearly financial information of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"financials"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_info">
+
+        <code class="highlight language-python">
+get_info<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for information about the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_info</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for information about the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span> <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="s2">"info"</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_institutional_holders">
+
+        <code class="highlight language-python">
+get_institutional_holders<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the institutional holders of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_institutional_holders</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the institutional holders of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"institutional_holders"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_isin_code">
+
+        <code class="highlight language-python">
+get_isin_code<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the International Securities Identification Number (ISIN).</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_isin_code</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the International Securities Identification Number (ISIN)."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span> <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="s2">"isin"</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_major_holders">
+
+        <code class="highlight language-python">
+get_major_holders<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the major holders of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_major_holders</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the major holders of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span> <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="s2">"major_holders"</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_mutualfund_holders">
+
+        <code class="highlight language-python">
+get_mutualfund_holders<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the mutualfund holders of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_mutualfund_holders</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the mutualfund holders of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"mutualfund_holders"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_options">
+
+        <code class="highlight language-python">
+get_options<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for information about the options of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_options</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for information about the options of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"options"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_balancesheet">
+
+        <code class="highlight language-python">
+get_quarterly_balancesheet<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the quarterly balancesheet of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_quarterly_balancesheet</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the quarterly balancesheet of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"quarterly_balancesheet"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_cashflow">
+
+        <code class="highlight language-python">
+get_quarterly_cashflow<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the quarterly cashflow of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_quarterly_cashflow</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the quarterly cashflow of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"quarterly_cashflow"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_earnings">
+
+        <code class="highlight language-python">
+get_quarterly_earnings<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the yearly quarterly of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_quarterly_earnings</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the yearly quarterly of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"quarterly_earnings"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_quarterly_financials">
+
+        <code class="highlight language-python">
+get_quarterly_financials<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the quarterly financial information of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_quarterly_financials</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the quarterly financial information of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"quarterly_financials"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_recommendations">
+
+        <code class="highlight language-python">
+get_recommendations<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the analyst recommendations for the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_recommendations</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the analyst recommendations for the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"recommendations"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_splits">
+
+        <code class="highlight language-python">
+get_splits<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for the splits of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_splits</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for the splits of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span> <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="s2">"splits"</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.DesignerFinanceCollector.get_sustainability">
+
+        <code class="highlight language-python">
+get_sustainability<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Request for information about the sustainability of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">get_sustainability</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Request for information about the sustainability of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_trickers</span><span class="p">(</span>
+        <span class="n">tickers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tickers</span><span class="p">,</span>
+        <span class="n">keyword_list</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
+        <span class="n">func</span><span class="o">=</span><span class="s2">"sustainability"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector">
+
+        <code>FinanceCollector</code>
+
+
+      </h2>
+<div class="doc doc-contents ">
+<p>FinanceCollector is in charge for executing the functions.</p>
+<p>During the execution, <code>FinanceCollector</code> can construct several product variations
+using the same building steps.</p>
+<div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.builder">
+
+        <code class="highlight">
+builder: <span class="n">BuilderFinanceCollector</span>        </code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-writable"><code>writable</code></small>
+  </span>
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Builder as a property with value None.</p>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BuilderFinanceCollector</code></td>
+<td>
+<p>BuilderFinanceCollector: A builder class, that contains the abstract properties and methods.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.__init__">
+
+        <code class="highlight language-python">
+__init__<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Initialize a fresh and empty builder.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Initialize a fresh and empty builder."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_builder</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_actions">
+
+        <code class="highlight language-python">
+find_actions<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the dividends and splits of the ticker together.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_actions</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the dividends and splits of the ticker together."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_actions</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_balancesheet">
+
+        <code class="highlight language-python">
+find_balancesheet<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the yearly balancesheet of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_balancesheet</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the yearly balancesheet of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_balancesheet</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_calendar">
+
+        <code class="highlight language-python">
+find_calendar<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for information about the upcoming events of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_calendar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for information about the upcoming events of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_calendar</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_cashflow">
+
+        <code class="highlight language-python">
+find_cashflow<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the yearly cashflow of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_cashflow</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the yearly cashflow of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_cashflow</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_chart_histogram">
+
+        <code class="highlight language-python">
+find_chart_histogram<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="s1">'1mo'</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="s1">'1d'</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">prepost</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">actions</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">auto_adjust</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">proxy</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">threads</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">group_by</span><span class="o">=</span><span class="s1">'column'</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Performa a search about the history charts of the tickers.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>period</code></td>
+<td><code>str</code></td>
+<td>
+<p>Period of the chart history; valid options: <code>1d</code>, <code>5d</code>, <code>1mo</code>, <code>3mo</code>, <code>6mo</code>, <code>1y</code>, <code>2y</code>, <code>5y</code>, <code>10y</code>, or <code>ytd,max</code>. It can either be used the <code>period</code>-parameter or the combination of <code>start</code>- and <code>end</code>-parameter. Defaults to "1mo".</p>
+</td>
+<td><code>'1mo'</code></td>
+</tr>
+<tr>
+<td><code>interval</code></td>
+<td><code>str</code></td>
+<td>
+<p>Interval, respectively, time step in the period; valid</p>
+</td>
+<td><code>'1d'</code></td>
+</tr>
+<tr>
+<td><code>options</code></td>
+<td><code></code></td>
+<td>
+<p><code>1m</code>, <code>2m</code>, <code>5m</code>, <code>15m</code>, <code>30m</code>, <code>60m</code>, <code>90m</code>, <code>1h</code>, <code>1d</code>, <code>5d</code>, <code>1wk</code>, <code>1mo</code>, or <code>3mo</code>. The intraday data cannot extend last 60 days. Defaults to "1d".</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>start</code></td>
+<td><code>str</code></td>
+<td>
+<p>Download start date string (YYYY-MM-DD) or _datetime. Defaults to None.</p>
+</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>end</code></td>
+<td><code>str</code></td>
+<td>
+<p>Download end date string (YYYY-MM-DD) or _datetime. Defaults to None.</p>
+</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>prepost</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Group by 'ticker' or 'column'. Defaults to False.</p>
+</td>
+<td><code>False</code></td>
+</tr>
+<tr>
+<td><code>actions</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Including Pre and Post market data in results. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>auto_adjust</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Adjusting all OHLC automatically. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>proxy</code></td>
+<td><code>str</code></td>
+<td>
+<p>Downloading the dividend plus stock splits data. Defaults to None.</p>
+</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>threads</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Specifying the number of download threads. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>group_by</code></td>
+<td><code>str</code></td>
+<td>
+<p>Grouping by ticker or column.Defaults to "column".</p>
+</td>
+<td><code>'column'</code></td>
+</tr>
+<tr>
+<td><code>progress</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Showing progress bar. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_chart_histogram</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">period</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"1mo"</span><span class="p">,</span>
+    <span class="n">interval</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"1d"</span><span class="p">,</span>
+    <span class="n">start</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">end</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">prepost</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="n">actions</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">auto_adjust</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">proxy</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">threads</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">group_by</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"column"</span><span class="p">,</span>
+    <span class="n">progress</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Performa a search about the history charts of the tickers.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        period (str, optional): Period of the chart history; valid options: `1d`, `5d`, `1mo`, `3mo`, `6mo`, `1y`, `2y`, `5y`, `10y`, or `ytd,max`. It can either be used the `period`-parameter or the combination of `start`- and `end`-parameter. Defaults to "1mo".</span>
+<span class="sd">        interval (str, optional): Interval, respectively, time step in the period; valid</span>
+<span class="sd">        options: `1m`, `2m`, `5m`, `15m`, `30m`, `60m`, `90m`, `1h`, `1d`, `5d`, `1wk`, `1mo`, or `3mo`. The intraday data cannot extend last 60 days. Defaults to "1d".</span>
+<span class="sd">        start (str, optional): Download start date string (YYYY-MM-DD) or _datetime. Defaults to None.</span>
+<span class="sd">        end (str, optional): Download end date string (YYYY-MM-DD) or _datetime. Defaults to None.</span>
+<span class="sd">        prepost (bool, optional):  Group by 'ticker' or 'column'. Defaults to False.</span>
+<span class="sd">        actions (bool, optional):  Including Pre and Post market data in results. Defaults to True.</span>
+<span class="sd">        auto_adjust (bool, optional): Adjusting all OHLC automatically. Defaults to True.</span>
+<span class="sd">        proxy (str, optional): Downloading the dividend plus stock splits data. Defaults to None.</span>
+<span class="sd">        threads (bool, optional): Specifying the number of download threads. Defaults to True.</span>
+<span class="sd">        group_by (str, optional): Grouping by ticker or column.Defaults to "column".</span>
+<span class="sd">        progress (bool, optional): Showing progress bar. Defaults to True.</span>
+<span class="sd">    """</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_chart_history</span><span class="p">(</span>
+        <span class="n">period</span><span class="o">=</span><span class="n">period</span><span class="p">,</span>
+        <span class="n">interval</span><span class="o">=</span><span class="n">interval</span><span class="p">,</span>
+        <span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span>
+        <span class="n">end</span><span class="o">=</span><span class="n">end</span><span class="p">,</span>
+        <span class="n">prepost</span><span class="o">=</span><span class="n">prepost</span><span class="p">,</span>
+        <span class="n">actions</span><span class="o">=</span><span class="n">actions</span><span class="p">,</span>
+        <span class="n">auto_adjust</span><span class="o">=</span><span class="n">auto_adjust</span><span class="p">,</span>
+        <span class="n">proxy</span><span class="o">=</span><span class="n">proxy</span><span class="p">,</span>
+        <span class="n">threads</span><span class="o">=</span><span class="n">threads</span><span class="p">,</span>
+        <span class="n">group_by</span><span class="o">=</span><span class="n">group_by</span><span class="p">,</span>
+        <span class="n">progress</span><span class="o">=</span><span class="n">progress</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_dividends">
+
+        <code class="highlight language-python">
+find_dividends<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the dividends of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_dividends</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the dividends of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_dividends</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_earnings">
+
+        <code class="highlight language-python">
+find_earnings<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the yearly earnings of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_earnings</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the yearly earnings of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_earnings</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_financials">
+
+        <code class="highlight language-python">
+find_financials<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the yearly financial information of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_financials</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the yearly financial information of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_financials</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_info">
+
+        <code class="highlight language-python">
+find_info<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the information about the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_info</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the information about the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_info</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_institutional_holders">
+
+        <code class="highlight language-python">
+find_institutional_holders<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the institutional holders of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_institutional_holders</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the institutional holders of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_institutional_holders</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_isin_code">
+
+        <code class="highlight language-python">
+find_isin_code<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the International Securities Identification Number (ISIN).</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_isin_code</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the International Securities Identification Number (ISIN)."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_isin_code</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_major_holders">
+
+        <code class="highlight language-python">
+find_major_holders<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the major holders of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_major_holders</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the major holders of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_major_holders</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_mutualfund_holders">
+
+        <code class="highlight language-python">
+find_mutualfund_holders<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the mutualfund holders of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_mutualfund_holders</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the mutualfund holders of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_mutualfund_holders</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_options">
+
+        <code class="highlight language-python">
+find_options<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the options of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_options</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the options of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_options</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_balancesheet">
+
+        <code class="highlight language-python">
+find_quarterly_balancesheet<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the quarterly balancesheet of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_quarterly_balancesheet</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the quarterly balancesheet of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_quarterly_balancesheet</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_cashflow">
+
+        <code class="highlight language-python">
+find_quarterly_cashflow<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the quarterly cashflow of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_quarterly_cashflow</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the quarterly cashflow of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_quarterly_cashflow</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_earnings">
+
+        <code class="highlight language-python">
+find_quarterly_earnings<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the quarterly earnings of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_quarterly_earnings</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the quarterly earnings of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_quarterly_earnings</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_quarterly_financials">
+
+        <code class="highlight language-python">
+find_quarterly_financials<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the quarterly financial information of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_quarterly_financials</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the quarterly financial information of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_quarterly_financials</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_recommendations">
+
+        <code class="highlight language-python">
+find_recommendations<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the analyst recommendations of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_recommendations</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the analyst recommendations of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_recommendations</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_splits">
+
+        <code class="highlight language-python">
+find_splits<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the splits of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_splits</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the splits of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_splits</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="ai2business.kpi_collector.finance_collector.FinanceCollector.find_sustainability">
+
+        <code class="highlight language-python">
+find_sustainability<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+
+
+      </h3>
+<div class="doc doc-contents ">
+<p>Perform a search for the sustainability of the ticker.</p>
+<details class="quote">
+          <summary>Source code in <code>ai2business/kpi_collector/finance_collector.py</code></summary>
+          <div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">find_sustainability</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">"""Perform a search for the sustainability of the ticker."""</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_sustainability</span><span class="p">()</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 19, 2020</span>
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../tutorials/timeseries_forecast_tutorial/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                AutoML
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../trends_collector/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Trends-Collector
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 - AI2Business
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/ai2business" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.tabs', 'navigation.sections', 'navigation.expand', 'search.suggest', 'search.highlight'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://unpkg.com/mermaid@8.4.4/dist/mermaid.min.js"></script>
+      
+        <script src="../js/version-select.js"></script>
+      
+    
+  </body>
+</html>
