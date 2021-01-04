@@ -198,8 +198,8 @@ class DesignerDataVisualization(BuilderDataVisualization):
     `DesignerDataVisualization` contains the specific implementation of
     `BuilderDataVisualization` based on the external libraries:
 
-    1. [missingno](https://github.com/ResidentMario/missingno)
-    2. [seaborn](https://github.com/mwaskom/seaborn)
+    1. [https://github.com/ResidentMario/missingno](https://github.com/ResidentMario/missingno)
+    2. [ttps://github.com/mwaskom/seaborn](https://github.com/mwaskom/seaborn)
 
     Args:
         BuilderDataVisualization (class): Abstract class that provides the implementations of the properties and methods.
